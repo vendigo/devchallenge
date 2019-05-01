@@ -1,0 +1,20 @@
+spring.security.user:
+  name: user
+  password: password
+
+hash.phone.default:
+  salt: ve6wsbe23zywk5jfg7b7
+  algorithm: SHA-1
+
+logging.level.it.devchallenge: debug
+
+management.endpoints.web.exposure.include: "*"
+
+#spring.data.mongodb:
+#  host: mongodb
+#  port: 27017
+#
+#---
+#spring.profiles: local
+#
+#spring.data.mongodb.host: localhost

@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - 27017:27017
+    command: mongod
+  discovery-server:
+    image: devch/discovery-server
+    ports:
+      - "8761:8761"
+  file-service-1:
+    image: devch/file-service
+    ports:
+      - "8090:8090"
+    depends_on:
+      - discovery-server
+      - mongodb
+  file-service-2:
+    image: devch/file-service
+    ports:
+      - "8091:8090"
+    depends_on:
+      - discovery-server
+      - mongodb
+  file-service-3:
+    image: devch/file-service
+    ports:
+      - "8092:8090"
+    depends_on:
+      - discovery-server
+      - mongodb
+  edge-server:
+      image: devch/edge-server
+      ports:
+        - "8080:8080"
+      depends_on:
+        - discovery-server
+        - file-service-1
+        - file-service-2
+        - file-service-3

@@ -1,0 +1,5 @@
+spring.application.name: edge-server
+
+zuul:
+  routes:
+    file-service: /files/**

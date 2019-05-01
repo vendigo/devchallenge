@@ -1,0 +1,9 @@
+execTimes:
+  - pagesToSync: 3
+    cron: "0 0 * * * *"
+  - pagesToSync: 10
+    cron: "0 0 0/3 * * *"
+  - pagesToSync: 30
+    cron: "0 0 0 * * *"
+  - pagesToSync: 50
+    cron: "0 0 0 ? * SAT"

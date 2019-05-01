@@ -1,0 +1,9 @@
+spring.security.user:
+  name: user
+  password: password
+
+hash.phone.default:
+  salt: someSalt
+  algorithm: SHA-1
+
+logging.level.it.devchallenge: debug

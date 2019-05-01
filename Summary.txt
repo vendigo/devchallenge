@@ -1,0 +1,27 @@
+11
+
+1. Round 1 - pdf-voting - Парсіння пдф файлів, зберігання в neo4j
+2. Semi Final - news monitor - Парсіння сайту зберігання в sql, знаходження різниці тексту
+3. Final - call-center - Зберігання в neo4j
+
+Фіналіст
+
+12
+
+4. Round 1 - DumpStorage - Зберігання в mongo, загрузка файлів, самописний auth, microservices
+5. Semi Final - css-grabber - Парсіння сайту через headless chrome, кешування
+6. Final - shared database - couchbase 
+
+Перше місце Pro
+
+1101
+
+7. Round 1 - share-password кодування
+8. Final - tournament - зберігання в sql, загрузка csv файлів
+
+Друге місце Standard
+
+backend
+
+9. Round 1 - hashphone - Зберігання в mongo, Reactor
+   Final - продовження hashphone

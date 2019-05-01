@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+    neo4j:
+      image: neo4j
+      ports:
+       - "7474:7474"
+       - "7687:7687"
+    app:
+      image: devchallange/callcenter
+      ports:
+      - "8080:8080"
+      depends_on:
+      - neo4j

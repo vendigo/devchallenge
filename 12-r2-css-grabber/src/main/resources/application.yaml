@@ -1,0 +1,5 @@
+selenium.hub.url: http://selenium-hub:4444/wd/hub
+
+cache.live.time.in.minutes: 10
+page.load.timeout.in.seconds: 30
+script.execution.timeout.in.seconds: 10

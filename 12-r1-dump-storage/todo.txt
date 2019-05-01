@@ -1,0 +1,11 @@
+TODO:
+
+1) Use JWT tokens + spring security (Gateway should pass auth token further to file service which have spring security configured).
+File service is unavailable from outside world.
+2) Use Spring-gateway project instead of Zuul
+3) Consider chunked upload/download
+4) Make docker-compose scale work for file service
+5) Configure Mongo cluster
+6) Write tests
+
+
